@@ -1,0 +1,32 @@
+This is the Code Book for the R Script run_analysis.R
+
+Information of the dataset is in the ReadMe
+
+1. Merging the training and the test set to create one data set
+
+x : combination of x_train and x_test
+y: combination of y_train and y_test
+Subject: combination of train and test subject
+All_Data : combination of all of those above
+
+
+
+2. Extracts only the measurements on the mean and standard deviation for each measurement
+
+The extracted data is in the variable ExtractedData, made by selecting subject and code containing
+mean and sd in All_Data
+
+3. Use desc activity names to name the activities in the data set
+numbers in code column are replaced with the corresponding activity
+
+4. Appropriate labelling
+in All_Data, all label were changed from 
+t = time
+f = frequency
+Acc = Accelerometer
+Gyro = Gyroscope
+Mag = Magnitude
+BodyBody = Body
+
+5. Independent tidy data set
+was prepared by summarising the All_Data
